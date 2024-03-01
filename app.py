@@ -6,7 +6,7 @@ st.set_page_config(page_title="Dashboard",
                    page_icon=":bar_chart:",
                    layout="wide")
 
-df = pd.read_csv('full.csv')
+df = pd.read_csv('dataset/full.csv')
 # add date col for year filter
 df['year'] = pd.to_datetime(df['order_delivered_customer_date'], format='%Y-%m-%d').dt.year
 
